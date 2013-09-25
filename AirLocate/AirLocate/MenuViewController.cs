@@ -6,7 +6,7 @@ namespace AirLocate {
 
 	public partial class MenuViewController : UITableViewController {
 
-		UIViewController[] controllers = new UIViewController [4];
+		UIViewController[] controllers = new UIViewController [5];
 
 		public MenuViewController (IntPtr handle) : base (handle)
 		{
@@ -19,6 +19,7 @@ namespace AirLocate {
 			controllers [1] = new RangingViewController (UITableViewStyle.Plain);
 			controllers [2] = new CalibrationBeginViewController (UITableViewStyle.Plain);
 			controllers [3] = (UIViewController) Storyboard.InstantiateViewController ("ConfigurationViewController");
+			controllers [4] = (UIViewController) Storyboard.InstantiateViewController ("MapViewController");
 		}
 
 		public override void RowSelected (UITableView tableView, NSIndexPath indexPath)

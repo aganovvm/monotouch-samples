@@ -16,7 +16,7 @@ namespace AirLocate {
 				new NSUuid ("5A4BCFCE-174E-4BAC-A814-092E77F6B7E5"),
 				new NSUuid ("74278BDA-B644-4520-8F0C-720EAF059935")
 			};
-			defaultPower = new NSNumber (-59);
+			defaultPower = new NSNumber (-59);		
 		}
 
 		static public string Identifier {
